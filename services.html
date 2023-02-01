@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<title>Govind &amp; Company</title>
 
 <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
 <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
@@ -53,7 +53,45 @@ header .navbar li a:hover {
 header .navbar li.active a:not(.dropdown li a){
 	color:#ff9d00;
 }
+.row .items li {
+ width:1000px;
+ height:auto;
+ border:2px solid #ddd;
+ box-shadow:0px 2px 12px 0px grey;
+ margin-bottom:20px ;
+ padding:10px;
+ margin-right:10px;
+ border-radius: 8px;
+}
+.gal-item .hover-info {
+	position: absolute;
+	background: rgba(51,51,51,0.9);
+	z-index: 9;
+	opacity: 0;
+	bottom: 32px;
+	left: 10px;
+	right:10px;
+	width:40%;
+	padding:18px;
+	overflow:hidden;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+.items li a {
+	color: black;
+	font-size: 14px;
+	display: inline-block;
+  font-weight: bold;
+	opacity:0.6;
+}
 
+.items li p {
+font-size:16px;
+color:black;
+}
 
 @media (min-width:800px) and (max-width:1200px) {
 
@@ -139,16 +177,15 @@ header .navbar li.active a:not(.dropdown li a){
           <ul class="nav ownmenu">
             <li> <a href="index.html">Home</a> </li>
             <li> <a href="about.html">About us</a> </li>
-            <li> <a href="clients.html">Clients</a> </li>
             <li  class="active"> <a href="services.html">Services &nbsp;&nbsp;</a>
               <ul class="dropdown" style="border-radius: 6px;">
-                <li> <a href="index.html">Pre engineered buildings</a> </li>
-                <li> <a href="index.html">Space room roofing</a> </li>
-                <li> <a href="index.html">Multi storied steel buildings</a> </li>
-                <li> <a href="#">Structural steel fabrication</a> </li>
-                <li> <a href="index.html" style="border-bottom:none;">General steel fabrication</a> </li>
+                <li> <a href="peb.html">Pre engineered buildings</a> </li>
+                <li> <a href="commercialconstruction.html">Commercial Building Construction</a> </li>
+                <li> <a href="industrialandwarehouse.html">Industrial & Warehouse Building Construction</a> </li>
+                <li> <a href="sheeting.html" style="border-bottom:none;">Sheeting</a> </li>
                </ul>
             </li>
+            <li> <a href="clients.html">Clients</a> </li>
             <li> <a href="projects.html">Projects</a> </li> 
             <li> <a href="contact.html">Contact us</a> </li>
           </ul>
@@ -178,167 +215,84 @@ header .navbar li.active a:not(.dropdown li a){
   <!-- Content -->
   <div id="content"> 
     
-    <!-- WHY CHOOSE US -->
     <section class="welcome padding-top-150 padding-bottom-150">
       <div class="container"> 
         
         <!-- INTRO SERVICES -->
-        <ul class="row">
-          
-          
-          <li class="col-md-4">
-            <div class="intro-ser" style="border:5px solid #00a7ee;height:670px;border-radius:6px;margin-bottom:20px;">
-            <img src="images/frametechsteels1jpg.jpg" alt="" class="img-responsive" style="width:100%;height:180px"> <br><br>
-             <h5 style="text-transform: none;">Pre Engineered Buildings</h6> 
-             <p style="font-size:16px;font-family:'Poppins',sans-serif;text-align:justify;margin: 14px 0px">
-              The pre engineered buildings are best suited for industrial,commercial and warehousing.We offer a customized solution to meet every commercial requirements and being a leading PEB structure manufacturer.This system is a building enclosure system that always includes a structural system.PEB uses high strength steel and is also ideal for construction in remote areas.
-             </p>   
-             <button style="margin-top:20px;">Read More</button>
-            </div>
-          </li>
-          
-          <li class="col-md-4">
-            <div class="intro-ser" style="border:5px solid #00a7ee;height:670px;border-radius:6px;margin-bottom:20px;">
-            <img src="images/spec-frame-roofing.jpg" alt="" class="img-responsive" style="width:100%;height:180px"> <br><br>
-             <h5 style="text-transform: none;">Space Frame Roofing</h6> 
-              <p style="font-size:16px;font-family:'Poppins',sans-serif;text-align:justify;margin: 14px 0px;">
-                We are engaged in offering a wide range of spaceframe Structures which are available at industry leading prices. Our products enhance the aesthetic appeal of public places & office buildings and can be customized as per the client's requirement
-                We are one of the most experienced space frame fabrication and erection companies backed by years of experience and handful of prestigious projects.
-              </p>   <br>
-             <button>Read More</button>
-            </div>
-          </li>
+        <div class="row">
+            <div class="col-md-8">
+              <ul class="row">
+                  <h4><span style="color:#1aa6be">Services</span></h4>  
+                  <hr style="width:88px;height:2px;background:#1aa6be"><br>
+                  
+                  <ul class="items col-4 row">
+                      <!-- ITEM -->
+                      <li class="item col-md-4">
+                        <div class="gal-item"> 
+                          <!-- GALLERY IMAGE --> 
+                          <img src="images/frametechsteels1jpg.jpg" alt="" style="width:100%;height:300px" class="img-responsive"> 
+                          <!-- Hover Info -->
+                          
+                          <caption><p style="font-size:20px">Pre-Engineered Building</p></caption>
+                           
+                        </div>
+                        <p>The pre engineered buildings are best suited for industrial,commercial and warehousing.We offer a customized solution ...</p>
+                        <button style="border:none;background:white;padding:4px">
+                          <a  href="peb.html" class="hover-info">KNOW MORE &nbsp;<i class="ion-android-arrow-forward"></i></a>
+                        </button>  
+                      </li>
+  
+                      <li class="item col-md-4">
+                          <div class="gal-item"> 
+                            <!-- GALLERY IMAGE --> 
+                            <img src="images/commercial-building.jpg" style="width:100%;height:300px" alt="" class="img-responsive"> 
+                            <!-- Hover Info -->
+                            
+                          <caption><p style="font-size:20px">Commercial Building Construction</p></caption>
+                          </div>
+                          <p>Our specialized professionals will help you get some outstanding commercial building designs ...</p>
+                          <button style="border:none;background:white;padding:4px">
+                            <a href="commercialconstruction.html" class="hover-info">KNOW MORE &nbsp;<i class="ion-android-arrow-forward"></i></a>
+                          </button>
+                      </li>
+  
+                      <li class="item col-md-4">
+                          <div class="gal-item"> 
+                            <!-- GALLERY IMAGE --> 
+                            <img src="images/industrial-buildings.jpg" style="width:100%;height:300px" alt="" class="img-responsive"> 
+                           
+                          <caption><p style="font-size:18px">Industrial & Warehouse Building Construction</p></caption>
+                          </div>
+                          <p>Our licensed engineers offer a proactive range of steel warehouse construction services. Call us to design your warehouse for safe storing ...</p>
+                          <button style="border:none;background:white;padding:4px">
+                            <a href="industrialandwarehouse.html" class="hover-info">KNOW MORE &nbsp;<i class="ion-android-arrow-forward"></i></a>
+                          </button>
+                      </li>
+  
+                      <li class="item col-md-4">
+                          <div class="gal-item"> 
+                            <!-- GALLERY IMAGE --> 
+                            <img src="images/Roofing-Solutions.jpg" style="width:100%;height:300px" alt="" class="img-responsive"> 
 
-          <li class="col-md-4">
-            <div class="intro-ser" style="border:5px solid #00a7ee;height:670px;border-radius:6px;margin-bottom:20px;">
-            <img src="images/multi-storied-steel-building.jpg" alt="" class="img-responsive" style="width:100%;height:180px"> <br><br>
-             <h5 style="text-transform: none;">Multi Storied Steel Buildings</h6> 
-              <p style="font-size:16px;font-family:'Poppins',sans-serif;text-align:justify;margin: 14px 0px;">
-               In developed countries a very large percentage of multi-storey buildings are built with steel structure. Steel is not so commonly used in construction of multi-storey frame, but it is a better material than reinforced concrete.
-               With Pre-engineered steel building systems, multi-stories can now be scripted in the shortest â€set-upon time.
-             </p>   <br>
-             <button style="margin-top:20px;">Read More</button>
+                          <caption><p style="font-size:20px">Sheeting</p></caption>
+                          </div>
+                          <p>Sheets were widely used for building flashing, cladding and roofing and continues to be used on heritage buildings ...</p>
+                          <button style="border:none;background:white;padding:4px">
+                            <a href="sheeting.html" class="hover-info">KNOW MORE &nbsp;<i class="ion-android-arrow-forward"></i></a>
+                          </button>
+                      </li>
+                        
+                  </ul>	
+  
+              </ul>
             </div>
-          </li>
-          
-          <li class="col-md-4">
-            <div class="intro-ser" style="border:5px solid #00a7ee;height:660px;border-radius:6px;margin-bottom:20px;">
-            <img src="images/multi-storied-steel-building.jpg" alt="" class="img-responsive" style="width:100%;height:180px"> <br><br>
-             <h5 style="text-transform: none;">Structural Steel Fabrication & Erection</h6> 
-              <p style="font-size:16px;font-family:'Poppins',sans-serif;text-align:justify;margin: 14px 0px;">
-                We are known for the quality of finish we impart during delivering engineering products fabrication. A dedicated team of quality control professionals has been employed to keep a stringent tab over the quality of steel fabrication and erection task performed at our steel fabrication facility.
-             </p>  <br> 
-             <button style="margin-top:58px;">Read More</button>
-            </div>
-          </li>
-          <li class="col-md-4">
-            <div class="intro-ser" style="border:5px solid #00a7ee;height:660px;border-radius:6px;margin-bottom:20px;">
-            <img src="images/spec-frame-roofing.jpg" alt="" class="img-responsive" style="width:100%;height:180px"> <br><br>
-             <h5 style="text-transform: none;">General Steel Fabrication</h6> 
-              <p style="font-size:16px;font-family:'Poppins',sans-serif;text-align:justify;margin: 14px 0px;">
-                We are fully equipped to handle engineering and fabrication of components of steel from various industrial sectors.Much qualified and experienced technical team coordinates the production process with accuracy and speed, determined to take up jobs of high volume and meet international standards and deadlines.
-             </p>   <br>
-             <button style="margin-top:56px;">Read More</button>
-            </div>
-          </li>
-        </ul>
+  
+          </div>
       </div>
     </section>
     
 
-    
-    <!-- WHY CHOOSE US -->
-    <section class="padding-top-150 padding-bottom-150">
-      <div class="container"> 
-        <!-- HEADING -->
-        <div class="heading text-center">
-          <h3> What <span>we Offer</span></h3>
-          <hr>
-        </div>
-        
-        <!-- We Are Good -->
-        <ul class="row we-are-good">
-          
-          <!-- CONSTRUCTION -->
-          <li class="col-md-4">
-            <article>
-              <div class="media-left">
-                <div class="icon"><img src="images/icon-why-1.png" alt="" ></div>
-              </div>
-              <div class="media-body">
-                <h6 class="font-normal margin-bottom-10">CONSTRUCTION</h6>
-                <p>Fresh minds with creative ideas</p>
-              </div>
-              <a href="#." class="go"><i class="fa fa-angle-right"></i></a> </article>
-          </li>
-          
-          <!-- Interior Design -->
-          <li class="col-md-4">
-            <article>
-              <div class="media-left">
-                <div class="icon"><img src="images/icon-why-2.png" alt="" ></div>
-              </div>
-              <div class="media-body">
-                <h6 class="font-normal margin-bottom-10">Interior Design</h6>
-                <p>A new touch is always welcome</p>
-              </div>
-              <a href="#." class="go"><i class="fa fa-angle-right"></i></a> </article>
-          </li>
-          
-          <!-- Consulting -->
-          <li class="col-md-4">
-            <article>
-              <div class="media-left">
-                <div class="icon"><img src="images/icon-why-3.png" alt="" ></div>
-              </div>
-              <div class="media-body">
-                <h6 class="font-normal margin-bottom-10">Consulting</h6>
-                <p>Fresh minds with creative ideas</p>
-              </div>
-              <a href="#." class="go"><i class="fa fa-angle-right"></i></a> </article>
-          </li>
-          
-          <!-- Special Projects -->
-          <li class="col-md-4">
-            <article>
-              <div class="media-left">
-                <div class="icon"><img src="images/icon-why-4.png" alt="" ></div>
-              </div>
-              <div class="media-body">
-                <h6 class="font-normal margin-bottom-10">Special Projects</h6>
-                <p>We do best work to your projects</p>
-              </div>
-              <a href="#." class="go"><i class="fa fa-angle-right"></i></a> </article>
-          </li>
-          
-          <!-- Design and build -->
-          <li class="col-md-4">
-            <article>
-              <div class="media-left">
-                <div class="icon"><img src="images/icon-why-5.png" alt="" ></div>
-              </div>
-              <div class="media-body">
-                <h6 class="font-normal margin-bottom-10">Design and build</h6>
-                <p>Fresh minds with creative ideas</p>
-              </div>
-              <a href="#." class="go"><i class="fa fa-angle-right"></i></a> </article>
-          </li>
-          
-          <!-- house renovation -->
-          <li class="col-md-4">
-            <article>
-              <div class="media-left">
-                <div class="icon"><img src="images/icon-why-6.png" alt="" ></div>
-              </div>
-              <div class="media-body">
-                <h6 class="font-normal margin-bottom-10">house renovation</h6>
-                <p>We do best work to your projects</p>
-              </div>
-              <a href="#." class="go"><i class="fa fa-angle-right"></i></a> </article>
-          </li>
-        </ul>
-      </div>
-    </section>
+  
     
     
   </div>

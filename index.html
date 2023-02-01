@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Govind &amp; Company</title>
 
 <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
 <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
@@ -63,9 +64,10 @@ body
 * {
 	margin: 0px;
 	padding: 0px;
+	
 }
 body {
-	background: #FFF;
+	
 	font-weight: normal;
 	position: relative;
 	font-size: 14px;
@@ -339,15 +341,15 @@ section {
 	margin: 0px;
 	font-weight:normal;
 	text-transform:uppercase;
-	letter-spacing:1px;
+	letter-spacing:4px;
 }
 
 .heading hr {
-	width: 50px;
+	width: 100px;
 	height: 2px;
 	border: none;
-	margin: 30px auto;
-	background:#ffbe00;
+	margin: 25px auto;
+	background:#1aa6be;
 }
 hr.main {
 	width: 50px;
@@ -369,7 +371,7 @@ hr.main {
 	color:#fff;
 }
 .heading h3 span{
-	color:#ffbe00;
+	color:#1aa6be;
 }
 .heading.text-left hr{
 	margin:30px 0;
@@ -428,7 +430,7 @@ hr.main {
 }
 .top-info .social li a:hover{
 	color:#fff;
-	background:#ffbe00;
+	background:#1aa5be;
 }
 /*=======================================================
       HEADER
@@ -700,9 +702,10 @@ header .quotes a:hover {
 	background: rgba(51,51,51,0.9);
 	z-index: 9;
 	opacity: 0;
-	bottom: 10px;
+	bottom: 32px;
 	left: 10px;
 	right:10px;
+	width:50%;
 	padding:20px;
 	overflow:hidden;
 	-webkit-transition: all 0.4s ease-in-out;
@@ -729,7 +732,7 @@ header .quotes a:hover {
 	display: inline-block;
 	position: absolute;
 	right:-50px;
-	top:30px;
+	top:15px;
 	opacity:0.6;
 }
 .gal-item .hover-info a:hover{
@@ -775,6 +778,7 @@ header .quotes a:hover {
 .mission p {
    font-family:Verdana, Geneva, Tahoma, sans-serif;
    font-size:16px;
+   letter-spacing: 1.2px;
 }
 .mission p::first-letter {
 font-size:22px;
@@ -787,7 +791,7 @@ margin-left:20px;
     font-size: 16px;
     float:left; 
 	width:46%;
-    height:410px;
+    height:auto;
 	margin-left:30px;
 	padding:40px;
 	border-right:1.5px solid slategray;
@@ -801,12 +805,27 @@ background-color: #ffbe00;height:1px;
 
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size:16px;
+  letter-spacing: 1.2px;
 }
 
 .vision p::first-letter {
 font-size:22px;
 color:darkslateblue;
 margin-left:20px;
+}
+
+.vision h4 {
+font-family:unset;
+color:#1aa6be;
+font-size:24px;
+
+}
+
+.mission h4 {
+font-family:unset;
+color:#1aa6be;
+font-size:24px;
+letter-spacing:3px;
 }
 /*=======================================================
       PAGINATION
@@ -1217,9 +1236,11 @@ margin-left:20px;
 	text-align: center;
 	float:left;
 	width:32%;
-	font-size: 20px;
+	font-size: 16.5px;
 	font-family:verdana;
 }
+
+
 .clients .style-2 li {
 	padding: 0px;
 	border: none;
@@ -2896,24 +2917,64 @@ header .quotes a {
 	font-size:9px;
 	display: inline-block;
 }
-
+.heading h3 {
+ font-size:16.5px;
+}
+.heading p {
+ font-size:14px;
+ letter-spacing: 2px;	
 }
 
-@media(max-width: 700px) {
+.vision h4 {
+font-size: 3px;	
+}
+.mission h4 {
+font-size: 3px;	
+}
+}
+
+@media(max-width: 600px) {
 
 	.vision {
-width:98%;
+  width:98%;
+  height: auto;
+  padding-right: 20px;
+  margin-left:2px;
+  border-right:none;
+
 }
-.mission {
-width:98%;
+  .mission {
+   width:98%;
+  height: auto;
+
 }
 .clients li {
 	font-size:15px;
 	width:40%;
 	
 }
+
+.vision p {
+    font-size: 12px;
 }
-@media (min-width:510px) and (max-width: 1060px) {
+    .mission p {
+		font-size: 12px;
+}
+
+.container .testimonials h5 {
+font-size: 4px;
+}
+
+.container .testimonials p {
+font-size: 12px;
+margin:22px;
+}
+.container .testimonials .chairman {
+	font-size:1.5px;
+}
+}
+
+@media (min-width:610px) and (max-width: 1060px) {
 	.clients li a {
 	font-size:12px;
 	display: inline-block;
@@ -2921,7 +2982,79 @@ width:98%;
 	.clients li  {
 	width:20%;
 	}
+	.vision {
+   width:98%;
+   height: auto;
+   border-right:none;
+}
+    .mission {
+     width:98%;
+    height: auto;
+}
 
+.container .testimonials h5 {	
+
+font-size: 4px;
+
+}
+
+.container .testimonials p {
+font-size: 12px;
+margin:22px;
+}
+.container .testimonials .chairman {
+	font-size:14.5px;
+}
+}
+
+.row ul h3 {
+	font-weight: normal;
+	letter-spacing: 3px;
+}
+
+.row .items li {
+ width:48%;
+ border:0.5px solid #ddd;
+ box-shadow:0px 2px 12px 0px grey;
+margin-bottom:20px;
+padding:10px;
+margin-right:20px;
+border-radius: 8px;
+}
+
+.container .testimonials h5 {
+padding-top: 20px;	
+font-weight: bold;
+font-size: 24px;
+font-family: monospace;
+color:rgb(48, 90, 107);
+}
+
+.container .testimonials p {
+	font-weight: bold;
+font-family: monospace;
+color:rgb(48, 90, 107);
+text-align:justify;
+letter-spacing: 1.5px;
+font-size: 16.5px;
+}
+
+.container .testimonials span {
+	font-weight: bold;font-size:40px;color:black;line-height:24px;
+}
+.container .testimonials .chairman {
+	font-size:16px;
+	letter-spacing: 1.2px;
+}
+
+.clients h6 {
+padding-left: 38px;
+padding-bottom: 42px;
+padding-top: 20px;	
+font-weight: bold;
+font-size: 24px;
+font-family: monospace;
+color:rgb(48, 90, 107);
 }
 </style>
 </head>
@@ -2961,16 +3094,15 @@ width:98%;
           <ul class="nav ownmenu">
             <li class="active"> <a href="index.html">Home</a> </li>
             <li> <a href="about.html">About us</a> </li>
-			<li> <a href="clients.html">Clients</a> </li>
-            <li> <a href="services.html">Services &nbsp;&nbsp;</a>
+			<li> <a href="services.html">Services &nbsp;&nbsp;</a>            
               <ul class="dropdown">
-			   <li> <a href="index.html">Pre engineered buildings</a> </li>
-			   <li> <a href="index.html">Space room roofing</a> </li>
-			   <li> <a href="index.html">Multi storied steel buildings</a> </li>
-               <li> <a href="#">Structural steel fabrication</a> </li>
-               <li> <a href="index.html" style="border-bottom:none;">General steel fabrication</a> </li>
+			   <li> <a href="peb.html">Pre engineered buildings</a> </li>
+			   <li> <a href="commercialconstruction.html">Commercial Building Construction</a> </li>
+			   <li> <a href="industrialandwarehouse.html">Industrial & Warehouse Building Construction</a> </li>
+               <li> <a href="sheeting.html" style="border-bottom:none;">Sheeting</a> </li>
               </ul> 
             </li> 
+			<li> <a href="clients.html">Clients</a> </li>
             <li> <a href="projects.html">Projects</a> </li> 
             <li> <a href="contact.html">Contact us</a> </li>
           </ul> 
@@ -3007,7 +3139,7 @@ width:98%;
                 data-elementdelay="0.0" 
                 data-endelementdelay="0" 
                 data-endspeed="300"
-                style="z-index: 5; font-size:50px; font-weight:500;">WE DO BIG THINGS WITH NEW IDEAS</div>
+                style="z-index: 5; font-size:45px; font-weight:500;text-align:center;">WE SPECIALIZES IN THE PLANNING, DESIGN, AND CONSTRUCTION OF BUILDINGS, <br> INFRASTRUCTURE, AND OTHER PHYSICAL STRUCTURES.</div>
             
             <!-- LAYER NR. 2 -->
             <div class="tp-caption sfb font-bold text-center tp-resizeme" 
@@ -3044,7 +3176,7 @@ width:98%;
           <!-- SLIDE  -->
           <li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" > 
             <!-- MAIN IMAGE --> 
-            <img src="images/slides/slide-2.jpg"  alt="slider"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+            <img src="images/slides/bg2.jpg"  alt="slider"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
             <!-- LAYERS --> 
             
             <!-- LAYER NR. 1 -->
@@ -3059,7 +3191,7 @@ width:98%;
                 data-elementdelay="0.0" 
                 data-endelementdelay="0" 
                 data-endspeed="300"
-                style="z-index: 5; font-size:50px; font-weight:500;">WE DO BIG THINGS WITH NEW IDEAS</div>
+                style="z-index: 5; font-size:50px; font-weight:500;">PROVIDING STEELWORK DESIGN, FABRICATION & ERECTION</div>
             
             <!-- LAYER NR. 2 -->
             <div class="tp-caption sfb font-bold text-center tp-resizeme" 
@@ -3099,7 +3231,6 @@ width:98%;
   <!-- Content -->
   <div id="content"> 
     
-    <!--what we do-->
     <section class="welcome padding-top-150 padding-bottom-150">
       <div class="container"> 
         
@@ -3107,95 +3238,154 @@ width:98%;
         <div class="heading text-center">
           <h3>welcome to <span>Govind & Company</span></h3>
           <hr>
-          <p style="font-size:16.5px"><span style="color:#ffc107;font-size:40px;font-weight:bold;">G</span>ovind & company commenced its operation in 1993 in construction technology.Gaining significant experience in the industry and following the construction trends in the country's commercial space within a short of time,
-			we have built many buildings at various locations in Kerala representing a wide variety of structures and virtually every type of industrial,commercial and warehouse buildings.Govind and company steel builders and contractors is engaged in the design, fabrication and erection of specialized steel structures like spaceframes, PEB, tensile architectures and fabricated tile roof.
+          <p style="letter-spacing:2px;"><span style="color:#1aa6be;font-size:40px;font-weight:lighter;">G</span>ovind & company commenced its operation in 1993 in construction technology.
+			Gaining significant experience in the industry and following the construction trends in the country's commercial space within a short of time,
+			we have built many buildings at various locations in Kerala representing a wide variety of structures and virtually every type of industrial,commercial and warehouse buildings.
+			Govind and company steel builders and contractors is engaged in the design, fabrication and erection of specialized steel structures like spaceframes, PEB, tensile architectures and fabricated tile roof.
             Our projects are managed by experienced and well-qualified project managers, engineers and skilled supervisors.
+			We focus on Airports, Metro stations, stadium & sports Domes, Factories, warehouses, Parking shelters, Canopies, Atriums, Shopping malls, commercial centres…
             We also focus on Pre-Engineered Buildings manufacturing and supply across the country. We are known for our superior quality, speedy delivery and total customer satisfaction.
             We are a dedicated team helping to maintain existing companies and assist our clients in making their dreams become a reality.
             
-            </p>
           </p>
         </div>
         
         <!-- INTRO SERVICES -->
         <div class="row">
-          <div class="col-md-8">
-            <ul class="row">
-              
-              <!-- best house renovation -->
-              <li class="col-md-6"> <img class="img-responsive" src="images/intro-img-1.jpg" alt="" >
-                <div class="intro-ser">
-                  <div class="tag"><img src="images/intro-icon-1.png" alt="" ></div>
-                  <h6 class="font-normal no-margin margin-bottom-20">best house renovation</h6>
-                  <p class="line-height-22"></p>
-                  <a href="#" class="font-pt">read more</a> </div>
-              </li>
-              
-              <!-- Design and build -->
-              <li class="col-md-6"> <img class="img-responsive" src="images/intro-img-2.jpg" alt="" >
-                <div class="intro-ser">
-                  <div class="tag"><img src="images/intro-icon-2.png" alt="" ></div>
-                  <h6 class="font-normal no-margin margin-bottom-20">Design and build</h6>
-                  <p class="line-height-22"></p>
-                  <a href="#" class="font-pt">read more</a> </div>
-              </li>
-            </ul>
-          </div>
           
-          <!-- INTRO INTRO -->
-          <div class="col-md-4">
-            <ul class="services-intro">
-              <!-- Architecture -->
-              <li>
-                <div class="media-left" >
-                  <div class="icon"><img src="images/intro-icon-3.png" alt="" ></div>
-                </div>
-                <div class="media-body">
-                  <h6 class="font-normal margin-bottom-10">Architecture</h6>
-                  <p>Create your dream house with us</p>
-                </div>
-              </li>
-              <!-- Interior Design -->
-              <li>
-                <div class="media-left" >
-                  <div class="icon"><img src="images/intro-icon-4.png" alt="" ></div>
-                </div>
-                <div class="media-body">
-                  <h6 class="font-normal margin-bottom-10">Interior Design</h6>
-                  <p>A new touch is always welcome</p>
-                </div>
-              </li>
-              <!-- Consulting -->
-              <li>
-                <div class="media-left" >
-                  <div class="icon"><img src="images/intro-icon-5.png" alt="" ></div>
-                </div>
-                <div class="media-body">
-                  <h6 class="font-normal margin-bottom-10">Consulting</h6>
-                  <p>Fresh minds with creative ideas</p>
-                </div>
-              </li>
-              <!-- Special Projects -->
-              <li>
-                <div class="media-left" >
-                  <div class="icon"><img src="images/intro-icon-6.png" alt="" ></div>
-                </div>
-                <div class="media-body">
-                  <h6 class="font-normal margin-bottom-10">Special Projects</h6>
-                  <p>We do best work to your projects</p>
-                </div>
-              </li>
+            <ul class="row">
+				<h3>Our <span style="color:#1aa6be">Services</span></h3>  
+				<hr style="width:80px;height:2px;background:#1aa6be">
+				
+				<ul class="items col-4 row">
+					<!-- ITEM -->
+					<li class="item col-md-4">
+					  <div class="gal-item"> 
+						<!-- GALLERY IMAGE --> 
+						<img src="images/frametechsteels1jpg.jpg" alt="" style="width:100%;height:220px" class="img-responsive"> 
+						<!-- Hover Info -->
+						<div class="hover-info">
+						  <h6>Pre-Engineered Building</h6>
+						  <p></p>
+						  <a href="peb.html"><i class="ion-android-arrow-forward"></i></a> 
+						</div>
+						<caption><p style="font-size:20px">Pre-Engineered Building</p></caption>
+					  </div>
+					</li>
+
+					<li class="item col-md-4">
+						<div class="gal-item"> 
+						  <!-- GALLERY IMAGE --> 
+						  <img src="images/commercial-building.jpg" style="width:100%;height:220px" alt="" class="img-responsive"> 
+						  <!-- Hover Info -->
+						  <div class="hover-info">
+							<h6>Commercial Building Construction</h6>
+							<p></p>
+							<a href="commercialconstruction.html"><i class="ion-android-arrow-forward"></i></a> 
+						</div>
+						<caption><p style="font-size:20px">Commercial Building Construction</p></caption>
+						</div>
+				    </li>
+
+					<li class="item col-md-4">
+						<div class="gal-item"> 
+						  <!-- GALLERY IMAGE --> 
+						  <img src="images/industrial-buildings.jpg" style="width:100%;height:220px" alt="" class="img-responsive"> 
+						  <!-- Hover Info -->
+						  <div class="hover-info">
+							<h6>Industrial & Warehouse Building Construction</h6>
+							<p></p>
+							<a href="industrialandwarehouse.html"><i class="ion-android-arrow-forward"></i></a> 
+						</div>
+						<caption><p style="font-size:18px">Industrial & Warehouse Building Construction</p></caption>
+						</div>
+					  </li>
+
+					  <li class="item col-md-4">
+						<div class="gal-item"> 
+						  <!-- GALLERY IMAGE --> 
+						  <img src="images/Roofing-Solutions.jpg" style="width:100%;height:220px" alt="" class="img-responsive"> 
+						  <!-- Hover Info -->
+						  <div class="hover-info">
+							<h6>Sheeting</h6>
+							<p></p>
+							<a href="sheeting.html"><i class="ion-android-arrow-forward"></i></a> 
+						</div>
+						<caption><p style="font-size:20px">Sheeting</p></caption>
+						</div>
+					  </li>
+					  
+				</ul>	
+
             </ul>
-          </div>
+          
+
         </div>
+
+		<!-- INTRO PROJECTS -->
+		<div class="row">
+          
+            <ul class="row">
+				<h3>Our <span style="color:#1aa6be">Projects</span></h3>  
+				<hr style="width:80px;height:2px;background:#1aa6be">
+				
+				<ul class="items col-4 row">
+					<!-- ITEM -->
+					<li class="item col-md-4">
+					  <div class="gal-item"> 
+						<!-- GALLERY IMAGE --> 
+						<img src="images/IMG_0818[171].jpeg" alt="" style="width:100%;height:220px" class="img-responsive"> 
+						<!-- Hover Info -->
+						
+						<caption><p style="font-size:20px">1?</p></caption>
+					  </div>
+					</li>
+
+					<li class="item col-md-4">
+						<div class="gal-item"> 
+						  <!-- GALLERY IMAGE --> 
+						  <img src="images/IMG_0816[162].jpeg" style="width:100%;height:220px" alt="" class="img-responsive"> 
+						  <!-- Hover Info -->
+						  
+						<caption><p style="font-size:20px">2?</p></caption>
+						</div>
+				    </li>
+
+					<li class="item col-md-4">
+						<div class="gal-item"> 
+						  <!-- GALLERY IMAGE --> 
+						  <img src="images/img20.jpeg" style="width:100%;height:220px" alt="" class="img-responsive"> 
+						  <!-- Hover Info -->
+						  
+						<caption><p style="font-size:18px">3?</p></caption>
+						</div>
+					  </li>
+
+					  <li class="item col-md-4">
+						<div class="gal-item"> 
+						  <!-- GALLERY IMAGE --> 
+						  <img src="images/IMG_0830[170].jpeg" style="width:100%;height:220px" alt="" class="img-responsive"> 
+						  <!-- Hover Info -->
+						 
+						<caption><p style="font-size:20px">4?</p></caption>
+						</div>
+					  </li>
+					  
+				</ul>	
+
+            </ul>
+          
+
+        </div>
+		
       </div>
     </section>
     
-    <!-- LATEST WORK -->
+    <!-- VISION AND MISSION -->
     
     
-		<div class="vision" align="center">
-        <h4 style="font-family:unset;color:#ffc107;font-size:26px">Vision</h4>
+		<div class="vision">
+        <h4>Our Vision</h4>
 		<p align="justify">Our vision is to strengthen the construction business by upholding its rigid engineering & construction standards and by instantly acting to the changing of projects complexity by adopting & implementing up to date technology
 			Our viewpoint is to meet beyond the expectations of our clients, associated workforce through extended relationships through honesty, professionalism and quality.
 			We produce and construct steel structures and their enclosure for diverse clients through the application of innovative technology, excellent engineering and a strong emphasis on client satisfaction.
@@ -3203,50 +3393,68 @@ width:98%;
         </div>
 
 	    <div class="mission">
-		<h4 style="font-family:unset;color:#ffc107;font-size:26px">Our Mission</h4>
+		<h4>Our Mission</h4>
 		<p align="justify">Govind & Company Contractor is not just a structural consultant & contractor. We are a dedicated team striving to bring growth to our community, helping to maintain existing companies and assist our clients in making their dreams become a reality.
 			To supply integrated services to clients, by adapting its capabilities, integrity, quality, time value and sense of competitive challenging guided & empowered by its core values.
-			Our long-term perception is seeking to build lasting relationships with our clients and partners by delivering the Projects on time, budget & quality, within an environment of motivated employee focused on continuous improvement, highest & rigid business standards, work ethics and corporate citizenship.
+			Our long-term perception is seeking to build lasting relationships with our clients and partners by delivering the Projects on time, budget & quality, highest & rigid business standards, work ethics and corporate citizenship.
 		<br><br>
 		</p>
 		</div>
  
-    
+        <section class="welcome" style="background: #f1f1f1;">
+			<div class="container"> 
+				<div class="testimonials">
+				<h5><u>TESTIMONIALS</u></h5><br>
+				<p><span>&OpenCurlyDoubleQuote;</span>One of the best and leading steel structure company in Kerala.Best service and on time finishing.
+					<br>We are highly pleased with their services.I would strongly recommend Govind and company to everyone.<sub>
+					<span>&CloseCurlyDoubleQuote;</span></sub>
+					<p class="chairman">CHAIRMAN<br>R1 INTERNATIONAL,PERUMBAVOOR
+					</p><br>
+			    </p>
+				</div>
+			</div>
+		</section>
+
     <!-- CLIENTS -->
-    <section class="clients padding-bottom-100">
+    <section class="clients padding-bottom-100" style="background:#f1f1f1">
 	  <br><br> 
       <div class="container">
         <div class="single-slide">
           <div class="item">
-            <ul class="row margin-top-5">
-              <li> <a href="#.">Dhaan Ispat Pvt. Ltd. </a></li>
-              <li> <a href="#.">Navagraha Warehousing<br> & Minerals Pvt. Ltd</a></li>
-			  <li> <a href="#.">Comex Services Ltd.</a></li>  
-            </ul>
+			<h6 class="client-heading"><u>Clients</u></h6>
+			<ul class="row margin-top-5">
+				<li> <a href="#."><img src="images/vtuff-glass.jpg" width="170px"><br>Orlando Enterprises</a></li>
+				<li> <a href="#."><img src="images/vtuff-glass.jpg" width="170px"><br>V Tough Glass</a></li>
+				<li> <a href="#."><img src="images/vtuff-glass.jpg" width="170px"><br>Furnace Fabrica India Ltd.</a></li> 
+			</ul>
+            
           </div>
 
           <div class="item">
+			<h6 class="client-heading"><u>Clients</u></h6>
             <ul class="row margin-top-5">
-              <li> <a href="#.">Bhagwathi Beverages Pvt. Ltd.</a> </li>
-              <li> <a href="#.">Kochi Plastics Solution Pvt. Ltd.</a></li>
-              <li> <a href="#.">Royal Glass</li>
+              <li> <a href="#."><img src="images/kohinoor.webp" width="80px"><br>Bhagwathi Beverages Pvt. Ltd.</a> </li>
+              <li> <a href="#."><img src="images/kohinoor.webp" width="80px"><br>Kochi Plastics Solution Pvt. Ltd.</a></li>
+              <li> <a href="#."><img src="images/kohinoor.webp" width="80px"><br>Kohinoor Marbles & Granites</a></li>
             </ul>
           </div>
 
 		  <div class="item">
+			<h6 class="client-heading"><u>Clients</u></h6>
             <ul class="row margin-top-5">
-              <li> <a href="#.">Prabhu Steels</a></li>
-			  <li> <a href="#.">ACC Ready Mix Concrete</a></li>
-			  <li> <a href="#.">R1 International</a></li> 
+              <li> <a href="#."><img src="images/prabhu.jpg" width="160px" height="60px"><br>Prabhu Steels</a></li>
+			  <li> <a href="#."><img src="images/acc.png" width="100px"><br>ACC Ready Mix Concrete</a></li>
+			  <li> <a href="#."><img src="images/r1.png" width="90px"><br>R1 International</a></li> 
             </ul>
           </div>
 
 		  <div class="item">
+			<h6 class="client-heading"><u>Clients</u></h6>
             <ul class="row margin-top-5">
-              <li> <a href="#.">Orlando Enterprises</a></li>
-			  <li> <a href="#.">V Tough Glass</a></li>
-			  <li> <a href="#.">Furnace Fabrica India Ltd.</a></li> 
-            </ul>
+				<li> <a href="#."><img src="images/acc.png" width="100px"><br>Dhaan Ispat Pvt. Ltd. </a></li>
+				<li> <a href="#."><img src="images/royalglass.webp" width="100px" height="55px"><br>Royal Glass</a></li>
+				<li> <a href="#."><img src="images/comex.jpg" width="80px"><br>Comex Services Ltd.</a></li>  
+			  </ul>
           </div>
         </div>
       </div>

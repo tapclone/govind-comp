@@ -244,9 +244,9 @@ a:hover, a:focus {
 	box-shadow: 4px 4px 0 #dca500;
 }
 .btn-yellow {
-	background: #ffc107;
+	background: #1aa5be;
 	
-	color: #333333;
+	color: #eceaea;
 	border: none;
 }
 .btn-yellow:hover {
@@ -314,14 +314,14 @@ section {
 	height: 2px;
 	border: none;
 	margin: 30px auto;
-	background:#ffbe00;
+	background:#1aa5bec1;
 }
 hr.main {
 	width: 50px;
 	height: 2px;
 	border: none;
 	margin: 30px 0;
-	background:#ffbe00;
+	background:#d1d3d3c1;
 }
 
 .heading p {
@@ -336,7 +336,7 @@ hr.main {
 	color:#fff;
 }
 .heading h3 span{
-	color:#ffbe00;
+	color:#1aa5be;
 }
 .heading.text-left hr{
 	margin:30px 0;
@@ -395,7 +395,7 @@ hr.main {
 }
 .top-info .social li a:hover{
 	color:#fff;
-	background:#ffbe00;
+	background:#25b7d1;
 }
 /*=======================================================
       HEADER
@@ -503,7 +503,7 @@ header .quotes a:hover {
       SUB BANNER
 ========================================================*/
 .sub-bnr {
-	background: url(../images/bg/sub-bnr-bg.jpg) no-repeat;
+	background: url(../images/bg/pexelbg.jpg) no-repeat;
 	background-size: cover;
 	min-height: 550px;
 	text-align: center;
@@ -1554,7 +1554,7 @@ footer button{
 	color:#ececec;
 }
 .contact-form label input {
-	border: 1px solid #ececec;
+	border: 1px solid black;
 	height: 40px;
 	padding: 0 20px;
 	border-radius: 0px;
@@ -1572,7 +1572,7 @@ footer button{
 	width: 100%;
 	position: relative;
 	padding: 10px 20px;
-	border: 1px solid #ececec;
+	border: 1px solid black;
 	height: 200px;
 	border-radius: 0px;
 	background: #fff;
@@ -1584,10 +1584,10 @@ footer button{
 	transition: all 0.4s ease-in-out;
 }
 .contact-form input:focus {
-	border: 1px solid #ffbe00 !important;
+	border: 1px solid #2fa0b4 !important;
 }
 .contact-form textarea:focus {
-	border: 1px solid #ffbe00 !important;
+	border: 1px solid #2fa0b4 !important;
 }
 
 
